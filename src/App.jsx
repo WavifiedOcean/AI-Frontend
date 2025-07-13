@@ -109,15 +109,15 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-cyan-50 to-blue-100">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            Roblox AI Script Generator
+            Wave AI Assistant
           </h1>
           <p className="text-lg text-gray-600">
-            Generate professional Roblox Lua scripts using advanced AI models
+            Generate powerful Lua scripts for Wave Roblox Executor using advanced AI
           </p>
         </div>
 
@@ -136,7 +136,7 @@ function App() {
             <CardContent className="flex items-center p-4">
               <Zap className="h-8 w-8 text-green-600 mr-3" />
               <div>
-                <p className="text-sm font-medium text-gray-600">Avg Response</p>
+                <p className="text-sm font-medium text-gray-600">Avg Generation</p>
                 <p className="text-2xl font-bold text-gray-900">1.2s</p>
               </div>
             </CardContent>
@@ -145,7 +145,7 @@ function App() {
             <CardContent className="flex items-center p-4">
               <Users className="h-8 w-8 text-purple-600 mr-3" />
               <div>
-                <p className="text-sm font-medium text-gray-600">Templates</p>
+                <p className="text-sm font-medium text-gray-600">Exploit Scripts</p>
                 <p className="text-2xl font-bold text-gray-900">{templates.length}</p>
               </div>
             </CardContent>
@@ -177,7 +177,7 @@ function App() {
                 <CardHeader>
                   <CardTitle>Script Requirements</CardTitle>
                   <CardDescription>
-                    Describe what you want your Roblox script to do
+                    Describe what you want your Wave Executor script to do
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -186,7 +186,7 @@ function App() {
                       Script Description
                     </label>
                     <Textarea
-                      placeholder="e.g., Create a speed walk script that allows players to run faster when holding shift key..."
+                      placeholder="e.g., Create an aimbot script for FPS games, auto-farm script for simulator games, speed hack for any game..."
                       value={prompt}
                       onChange={(e) => setPrompt(e.target.value)}
                       rows={4}
@@ -204,11 +204,11 @@ function App() {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="general">General</SelectItem>
-                          <SelectItem value="movement">Movement</SelectItem>
-                          <SelectItem value="interface">Interface/GUI</SelectItem>
-                          <SelectItem value="combat">Combat</SelectItem>
-                          <SelectItem value="data">Data Storage</SelectItem>
-                          <SelectItem value="effects">Effects</SelectItem>
+                          <SelectItem value="exploit">Exploit/Hack</SelectItem>
+                          <SelectItem value="aimbot">Aimbot/ESP</SelectItem>
+                          <SelectItem value="autofarm">Auto-Farm</SelectItem>
+                          <SelectItem value="speed">Speed/Teleport</SelectItem>
+                          <SelectItem value="gui">Custom GUI</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -262,7 +262,7 @@ function App() {
                 <CardHeader>
                   <CardTitle>Generated Script</CardTitle>
                   <CardDescription>
-                    Your AI-generated Roblox Lua script
+                    Your AI-generated Lua script for Wave Executor
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -333,7 +333,7 @@ function App() {
               <CardHeader>
                 <CardTitle>Script Templates</CardTitle>
                 <CardDescription>
-                  Pre-built templates for common Roblox scripting tasks
+                  Pre-built templates for common Wave Executor scripts
                 </CardDescription>
               </CardHeader>
               <CardContent>
